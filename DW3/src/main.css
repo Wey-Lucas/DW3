@@ -1,0 +1,141 @@
+body{
+    --cor-primaria:#213737;
+    --cor-primaria-escura:#1c2f2f;
+    --cor-secundaria:#252c6a;
+    --cor-exito:#4bb544;
+    --cor-falha:#cc3333;
+    --border-radius:4px;
+
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background: var(--cor-primaria);
+    background-size: cover;
+}
+
+.container{
+    width: 400px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    background: #ffffff;
+}
+
+.container,
+ .form-input,
+  .form-button {
+    font: 500 1rem 'Quicksand', sans-serif;
+}
+
+.form-hidden{
+    display: none;
+}
+
+.form > *:first-child{
+    margin-top: 0;
+}
+
+.form > *:last-child{
+    margin-bottom: 0;
+}
+
+.form_mensagem_erro{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form_mensagem-sucesso{
+    color: var(--cor-exito);
+}
+
+
+.form_mensagem-falha{
+    color: var(--cor-falha);
+}
+
+.form_titulo{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form_input-group{
+    margin-bottom: 1rem;
+}
+
+.form_input{
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 0.75 rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 0.5px solid #4e4e4e;
+    outline: none;
+    background: #eee;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+form_input:focus{
+    border: var(--cor-primaria);
+    background:#fff ;
+}
+
+.form_input-erro{
+    color: var(--cor-falha);
+    border-color: var(--cor-falha);
+}
+
+.form_input-mensagem-erro{
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--cor-falha);
+}
+
+.form_button{
+  width: 100%;  
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius);
+  outline: none;
+  cursor: pointer;
+  background: var(--cor-primaria);
+}
+
+.form_button:hover{
+    background:var(--cor-primaria-escura);
+}
+
+.form_button:active{
+    transform: scale(0.98);
+}
+
+.form_text {
+    text-align: center;
+}
+
+.form_link{
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.form_link:hover{
+    text-decoration: underline;
+}
+
+#btnVoltar{
+    text-decoration: none;
+    color: #fff;
+}
+
+

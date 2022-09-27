@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DW3 - Teste</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="src/main.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" class="form" id="login">
+            <h1 class="form_titulo">Login</h1>
+            <div class="form_mensagem form_mensagem_falha"></div>
+            <div class="form_input-group">
+                <input type="text" class="form_input" autofocus placeholder="Usuário">
+                <div class="form_input-mensagem-erro"></div>
+            </div>
+            <div class="form_input-group">
+                <input type="password" class="form_input" autofocus placeholder="Senha">
+                <div class="form_input-mensagem-erro"></div>                
+            </div>
+            <button href="agradecimento.html" class="form_button" type="submit"><a href="index.html" id="btnVoltar">Acessar</a></button>
+            <p class="form_text">
+                <a href="#" class="form_link" id="linkSenha">Esqueceu sua Senha?</a>
+            </p>
+            <p class="form_text">
+                <a href="#" class="form_link" id="linkCadastro">Não possui uma conta? Cadastre aqui</a>
+            </p>
+        </form>
+        <form action="" class="form form-hidden" id="cadastro">
+            <h1 class="form_titulo">Criar uma Conta</h1>
+            <div class="form_mensagem form_mensagem_erro"></div>
+            <div class="form_input-group">
+                <input type="text" class="form_input" id="signupUsername" autofocus placeholder="Usuário">
+                <div class="form_input-mensagem-erro"></div>
+            </div>
+            <div class="form_input-group">
+                <input type="text" class="form_input" autofocus placeholder="Endereço de Email">
+                <div class="form_input-mensagem-erro"></div>
+            </div>            
+            <div class="form_input-group">
+                <input type="password" class="form_input" autofocus placeholder="Senha">
+                <div class="form_input-mensagem-erro"></div>                
+            </div>
+            <div class="form_input-group">
+                <input type="text" class="form_input" autofocus placeholder="Confirme sua Senha">
+                <div class="form_input-mensagem-erro"></div>
+            </div>
+            <button class="form_button" type="submit">Acessar</button>
+            <p class="form_link">
+                <a href="#" class="form-link" id="linkLogin">Já tem uma conta? Faça Login aqui</a>
+            </p>
+        </form>
+        <form action="" class="form form-hidden" id="senharecover">
+            <h1 class="form_titulo">Recuperação de Senha</h1>
+            <div class="form_mensagem form_mensagem_falha"></div>
+            <div class="form_input-group">
+                <input type="text" class="form_input" autofocus placeholder="Endereço de Email">
+                <div class="form_input-mensagem-erro"></div>
+            </div>
+            <button class="form_button" type="submit">Enviar</button>
+            <p class="form_link">
+                <a a href="#"  class="form-link" id="linkLogin">Lembrou sua Senha? Faça Login aqui</a>
+            </p>
+        </form>
+    </div>
+    <script src="src/main.js"></script>
+</body>
+</html>
